@@ -56,8 +56,19 @@ function hideLightBox() {
   gotVideo.currentTime = 0;
 }
 
-// add a click event to the sigilButtons
-sigilButtons.forEach(button => button.addEventListener("click", showLightbox))
+function animateBanners() {
+  //animate the banners across the page using some basic math and css
+  let offsetValue = 600;
+  let targetValue = offsetValue * this. dataset.offset;
+debugger;
+  // figure out how to make banners "slide" using this new value
+}
+
+// add a click event to the sigilButtons --> changes data and video source
+//sigilButtons.forEach(button => button.addEventListener("click", showLightbox));
+
+// add another click event to the sigilButtons --> this will animate the banners across the top of the page
+sigilButtons.forEach(button => button.addEventListener("click", animateBanners));
 
 // add an event handler for the lightbox close button
 closeLightBox.addEventListener("click", hideLightBox);
